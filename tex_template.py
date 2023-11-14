@@ -14,7 +14,8 @@ def fourbyfour(questions_1, questions_2, bold=False):
 \begin{table}
     \Large
     \centering
-    \begin{tabular}{|p{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|}
+    \begin{tabular}{||m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}||}
+        \hline
         \hline
 """
         + "\n".join(
@@ -26,13 +27,15 @@ def fourbyfour(questions_1, questions_2, bold=False):
             ]
         )
         + r"""
+        \hline
     \end{tabular}
 \end{table}
 
 \begin{table}
     \Large
     \centering
-    \begin{tabular}{|p{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|}
+    \begin{tabular}{||m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}|m{0.2\textwidth}<{\centering}||}
+        \hline
         \hline
 """
         + "\n".join(
@@ -43,7 +46,9 @@ def fourbyfour(questions_1, questions_2, bold=False):
                 for _ in range(4)
             ]
         )
-        + r"""    \end{tabular}
+        + r"""
+        \hline
+    \end{tabular}
 \end{table}
 \end{document}"""
     )
