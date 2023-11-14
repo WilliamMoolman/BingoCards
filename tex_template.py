@@ -1,4 +1,7 @@
-def fourbyfour(questions_1, questions_2):
+def fourbyfour(questions_1, questions_2, bold=False):
+    if bold:
+        questions_1 = ["\\textbf{" + str(q) + "}" for q in questions_1]
+        questions_2 = ["\\textbf{" + str(q) + "}" for q in questions_2]
     return (
         r"""\documentclass[20pt]{article}
 \usepackage{array}
