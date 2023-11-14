@@ -6,6 +6,7 @@ def fourbyfour(questions_1, questions_2, bold=False):
         r"""\documentclass[20pt]{article}
 \usepackage{array}
 \usepackage[legalpaper, portrait, margin=0in]{geometry}
+\usepackage{helvet}
 
 \begin{document}
 
